@@ -1,0 +1,213 @@
+* {
+    font-family: Gabarito, serif;
+}
+/* Advertisement ================================================================================ */
+.wrapper {
+    background-color: white;
+    max-width: 100%;
+    z-index: -111111;
+}
+.main {
+    max-width: 100%;
+}
+.add-div {
+    background-image: url('./Food/steak-bg3.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    padding-left: 6%;
+}
+.text {
+    color: white;
+    font-weight: bolder;
+}
+/* ปุ่ม Subscribe */
+.sub {
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px rgba(57, 57, 57, 0.2);
+}
+/* Advertisement (END) ============================================================================ */
+
+/* Product Border ================================================================================= */
+.cards {
+    border-radius: 10px;
+    height: 370px;
+    border: 0.5px solid lightgray;
+    background-color: whitesmoke;
+}
+.main-thai-food{
+    max-width: 100%;
+    margin-top: -25px;
+}
+.pic-product {
+    height: 50%;
+    border-top-left-radius: 10px; /* มุมโค้งด้านบนซ้าย */
+    border-top-right-radius: 10px; /* มุมโค้งด้านบนขวา */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10px;
+}
+.body-card {
+    margin-bottom: 20px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.button-buy {
+    padding: 3px 50px 3px 50px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.button-buy:hover {
+    background-color: rgb(208, 56, 1);
+    transition: 0.3s ease;
+}
+.but-pie,
+.but-straw-bingsu {
+    background-color: rgb(198, 62, 13);
+    border: rgb(198, 62, 13);
+}
+
+.text-ds {
+    font-size: 3em;
+}
+.grid-thai-food {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 40px;
+}
+strong {
+    color: rgb(201, 201, 201);
+}
+span,.dow {
+    margin-left: 5px;
+}
+.dow {
+    color: gold;
+}
+.dow-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ff-pic1 {
+    background-image: url('./img3/steak-food.jpeg');
+}
+#ff-pic2 {
+    background-image: url('./img3/\ DuckLegConfit.jpeg');
+}
+#ff-pic3 {
+    background-image: url('./img3/BoeufBourguignon.jpeg');
+}
+#ff-pic4 {
+    background-image: url('./img3/chicken-cordon-bleu-recipe-5.jpg');
+}
+#ff-pic5 {
+    background-image: url('./img3/cassoulet_thecozyapron_1.jpeg');
+}
+#ff-pic6 {
+    background-image: url('./img3/Gigotd\'Agneau.webp');
+}
+#ff-pic7 {
+    background-image: url('./img3/summerratatouille_thumbnail.jpg');
+}
+#ff-pic8 {
+    background-image: url('./img3/ChoucrouteGarnie.webp');
+}
+
+#sec-sroll {
+    margin-bottom: 30px;
+}
+/* Product Border (END) ============================================================================ */
+.thai-food-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.f-food {
+    margin-bottom: 25px;
+}
+@media (max-width: 414px) {
+    .side-image {
+        display: none;
+    }
+    .add-div {
+        height: 230px;
+    }
+    .des1 ,
+    .des2 {
+        margin-top: 20px;
+    }
+    .button-buy {
+        padding: 1px 15px 1px 15px;
+    }
+    .cards {
+        height: 280px;
+    }
+    .pic-product {
+        height: 50%;
+    }
+    .body-card {
+        height: 20%;
+    }
+    .title {
+        font-size: medium;
+    }
+    .button-buy,
+    span {
+        font-size: small;
+    }
+    .price {
+        font-size: medium;
+    }
+    /* ปุ่ม Subscribe */
+    .sub {
+    width: 100px;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    }
+    .colft {
+        height: 10px;
+    }
+    strong {
+        font-size: small;
+    }
+}
+
+@media (max-width: 375px) {
+    .title,
+    .button-buy,
+    span,
+    .price,
+    strong {
+        font-size: small;
+    }
+    .cards {
+        height: 250px;
+    }
+    .sub {
+        width: 180px;
+        height: 25px;
+    }
+}

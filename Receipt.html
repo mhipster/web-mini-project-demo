@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Receipt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Receipt.css">
+  </head>
+  <body>
+    
+    <!-- Confirm order -->
+    <div class="col-cart2 col-sm-4 receipt">
+        <!-- พื้นที่ order summary -->
+        <div class="space-odsum">
+            <!-- หัวข้อ -->
+            <div class="header">
+                <h2>Mezzdough</h2><br>
+                <h2>Restaurant</h2>
+            </div>
+            <!-- รายการอาหารที่สั่ง-->
+            <div class="container text-center list-order">
+                <div class="row row-order-list">
+                  <div class="col-7 col-order-list">
+                    <p>Steak x 1</p></div>
+                  <div class="col-5 col-order-price">
+                    <p>฿ 149.00</p>
+                  </div>
+                  <div class="col-7 col-order-list">
+                    <p>Noodle x 1</p></div>
+                  <div class="col-5 col-order-price">
+                    <p>฿ 59.00</p>
+                </div>
+                <div class="col-7 col-order-list">
+                    <p>Pad Kaproa x 1</p> </div>
+                  <div class="col-5 col-order-price">
+                    <p>฿ 49.00</p>
+                </div>
+              </div>          
+            </div>
+            <!-- Subtotal -->
+            <div class="container text-center sum-order">
+                <div class="row row-order-sum">
+                <div class="col-7 col-order-sum">
+                    <p>Subtotle</p></div>
+                <div class="col-5 col-order-price-sum">
+                    <p>฿ 257.00</p>
+                </div>
+                <div class="col-7 col-order-sum">
+                    <p>Delivery</p></div>
+                <div class="col-5 col-order-price-sum">
+                    <p>฿ 5.00</p>
+                </div>
+                <div class="col-7 col-order-sum">
+                    <p>VAT</p> </div>
+                <div class="col-5 col-order-price-sum">
+                    <p>฿ 2.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- Total -->
+        <div class="container text-center total-order">
+            <div class="row row-order-total">
+            <div class="col-7 col-order-total">
+                <h3>TOTAL</h3></div>
+            <div class="col-5 col-order-price-total">
+                <h3>฿ 264</h3>
+            </div>
+        </div>
+        </div>
+        <div class="thank">
+            <h2>Thank you</h2>
+        </div>
+        <div class="qr">
+            <img src="./barcode.png" alt="">
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

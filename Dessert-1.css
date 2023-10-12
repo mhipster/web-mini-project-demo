@@ -1,0 +1,132 @@
+.main-product {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.row-main {
+    max-height: 100vh;
+    background: #fff;
+    width: 92%;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.side-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #1e1e1e;
+    padding: 0;
+    background-image: url('./img2/pancake-dessert.jpg');
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-type {
+    color: #b9b9b9;
+}
+
+.aa {
+    text-decoration: none;
+    color: black;
+}
+.aa:hover {
+    color: orangered;
+}
+
+hr {
+    width: 97%;
+}
+.button-add {
+    width: 100%;
+    height: 40px;
+    color: white;
+    border: none;
+    background-color: orangered;
+}
+.button-add:hover {
+    background-color: rgb(221, 59, 0);
+}
+.body-card {
+    margin-left: 5%;
+    margin-right: 6%;
+}
+.share {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+span,.dow {
+    margin-left: 5px;
+}
+.dow ,
+.dow1 {
+    color: gold;
+}
+.pancake-product {
+    display: none;
+}
+/* จอมือถือ */
+@media (max-width: 414px) {
+    .colft {
+        height: 10px;
+    }
+    .address-text {
+        align-items: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .ft-title {
+        font-size: 0.3em;
+    }
+    .body-card {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .row-main {
+        margin-left: -10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 96%;
+        padding: 0%;
+    }
+    .pancake-product {
+        display: block;
+    }
+    body {
+        padding: 0;
+    }
+    .side-image {
+        padding: 0px;
+        max-width: 100%;
+    }
+    .main-product {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-h6 {
+        font-size: small;
+    }
+    .text-type {
+        margin-top: -5px;
+    }
+
+    .containerft,
+    .containcp {
+        display: none;
+    }
+}
+.row-main {
+    height: 600px;
+}

@@ -1,0 +1,49 @@
+.container-th{
+    max-width: 100%;
+}
+.col-th1, .col-th2, .col-th3{
+    /* border: 1px solid;   */
+    padding: 30px 0;
+}
+
+.box{
+    /* border: 1px solid;  */
+    max-width: 50%;
+    margin: 0 auto;
+
+}
+img{
+    width: 50%;
+    height: auto;
+}
+.track{
+    display: flex;
+}
+.under, .tran, .deli{
+    /* border: 1px solid; */
+    margin: 0 5%;
+    max-width: 30%;
+}
+.bi1, .bi2, .bi3{
+    width: 50%;
+    height: 200px;
+    
+}
+.bi2, .bi3{
+    color: darkgray;
+    margin-top: -50px;
+}
+.bi1{
+    margin-top: -50px;
+    color: orangered;
+}
+.yod h6{
+    margin-top: 15px;
+}
+h6{
+    margin-top: -45px;
+}
+.under h6{
+    font-weight: bold;
+    color: rgb(209, 178, 0);
+}

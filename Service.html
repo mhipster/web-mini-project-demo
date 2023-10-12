@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Service | Mezzdough Restaurant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./calendar.css">
+    <link rel="stylesheet" href="./Service.css">
+</head>
+<body>
+        <!-- =========================================== Navbar ============================================ -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+        
+                <!-- ========= Logo ========= -->
+                  <a class="logo" href="./index.html">MEZZDOUGH</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+                    <!-- ========= Nav Home ========= -->
+                    <li class="nav-item item-home">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+        
+                    <!-- ======== Nav Product Dropdown ======== -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-Product" href="./Product" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Products &#9207;
+                        </a>
+                        <!-- ======= Dropdown Level1 ======= -->
+                        <ul class="dropdown-menu">
+                          <li class="type-food"><a class="dropdown-item" href="./Dessert.html">Dessert</a></li>
+                          <li class="type-food"><a class="dropdown-item" href="./Drink.html">Drink</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li class="type-food"><a class="dropdown-item food-focus" href="#">Food &#9205;</a>
+        
+                            <!-- ======= Dropdown Level2 ======= -->
+                            <ul class="foods">
+                                <a class="f-country" href="./ThaiFood.html">
+                                    <li class="food">Thai</li>
+                                </a>
+                                <a class="f-country" href="./JapanFood.html">
+                                    <li class="food">Japan</li>
+                                </a>
+                                <a class="f-country" href="./FranceFood.html">
+                                    <li class="food">France</li>
+                                </a>
+                                <a class="f-country" href="./ItalyFood.html">
+                                    <li class="food">Italy</li>
+                                </a>
+                            </ul>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <!-- ======== Nav Contact ========= -->
+                    <li class="nav-item">
+                        <a class="nav-link contact" href="./Contact.html">Contact</a>
+                    </li>
+        
+                    <!-- ========= Nav Service ======== -->
+                    <li class="nav-item">
+                        <a class="nav-link service" href="./Service.html">Service</a>
+                    </li>
+        
+                    <!-- ========= Nav Reward ======== -->
+                    <li class="nav-item">
+                        <a class="nav-link reward" href="./Reward.html">Reward</a>
+                    </li>
+        
+                    </ul>
+        
+                    <div class="icon-right">
+                    <!-- ======= Icon รถเข็น ======= -->
+                    <div class="cart">
+                        <a href="./Cart.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                            </svg>
+                        </a>
+                        <div class="count"><span> 0 </span></div>
+                    </div>
+        
+                    <!-- ======== กล่อง search ========= -->
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2 search2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+        
+                    <!-- ======= Icon User ======= -->
+                    <a href="./Profile.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                        </svg>
+                    </a>
+                    </div>
+        
+                  </div>
+                </div>
+            </nav>
+        </header>
+    <!-- ====================================== ภาพโฆษณา =============================================== -->
+        <div class="container main">
+            <div class="row add-div">
+                <div class="col-md-12 left">
+                    <h1 id="sevice-head">Service</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-select">
+            <h3 id="service">Select Event</h3>
+        </div>
+        <div class="row text-center main-event row-cols-1 row-cols-sm-2 row-cols-md-4">
+
+            <div class="col">
+                <div class="grid-card">
+                    <div class="pic-product pic01">
+                        <!-- รูป -->
+                    </div>
+                    <div class="body-card">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              <h5>Wedding</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="grid-card">
+                    <div class="pic-product pic02">
+                        <!-- รูป -->
+                    </div>
+                    <div class="body-card">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              <h5>Birthday</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="grid-card">
+                    <div class="pic-product pic03">
+                        <!-- รูป -->
+                    </div>
+                    <div class="body-card">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              <h5>Seminar</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="grid-card">
+                    <div class="pic-product pic04">
+                        <!-- รูป -->
+                    </div>
+                    <div class="body-card">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              <h5>Charity Work</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="grid-card">
+                    <div class="pic-product pic05">
+                        <!-- รูป -->
+                    </div>
+                    <div class="body-card">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              <h5>Family Party</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="grid-card">
+                    <div class="pic-product pic06">
+                        <!-- รูป -->
+                    </div>
+                    <div class="body-card">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              <h5>Celebration</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col">
+                <div class="grid-card">
+                    <div class="pic-product pic07">
+                        <!-- รูป -->
+                    </div>
+                    <div class="body-card">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              <h5>Honeymoon</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="grid-card">
+                    <div class="pic-product pic08">
+                        <!-- รูป -->
+                    </div>
+                    <div class="body-card">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              <h5>Open Product Event</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================= Calendar ================================== -->
+        <div class="title-select">
+            <h3 id="service">Select Time</h3>
+        </div>
+        <div class="row text-center grid-time row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col g-col-6">
+
+                <div class="carlen">
+                    <div class="calendar">
+                        <div class="headie">
+                            <div class="month"></div>
+                                <div class="btns">
+                                    <div class="btn today-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-day" viewBox="0 0 16 16">
+                                            <path d="M4.684 11.523v-2.3h2.261v-.61H4.684V6.801h2.464v-.61H4v5.332h.684zm3.296 0h.676V8.98c0-.554.227-1.007.953-1.007.125 0 .258.004.329.015v-.613a1.806 1.806 0 0 0-.254-.02c-.582 0-.891.32-1.012.567h-.02v-.504H7.98v4.105zm2.805-5.093c0 .238.192.425.43.425a.428.428 0 1 0 0-.855.426.426 0 0 0-.43.43zm.094 5.093h.672V7.418h-.672v4.105z"/>
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                          </svg>
+                                    </div>
+                                    <div class="btn prev-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="btn next-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="weekdays">
+                            <div class="day">Sun</div>
+                            <div class="day">Mon</div>
+                            <div class="day">Tue</div>
+                            <div class="day">Wed</div>
+                            <div class="day">Thu</div>
+                            <div class="day">Fri</div>
+                            <div class="day">Sat</div>
+                        </div>
+                        <div class="days">
+                        <!--  lets add days using js  -->
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col g-col6">
+                <div class="carlen">
+                    <div class="calendar">
+                        <div class="grid text-center grid-select-time">
+                            <div class="g-col-4 time">
+                                <strong>9.00 - 10.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>10.00 - 11.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>11.00 - 12.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>12.00 - 13.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>13.00 - 14.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>14.00 - 15.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>15.00 - 16.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>16.00 - 17.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>17.00 - 18.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>18.00 - 19.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>19.00 - 20.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>20.00 - 21.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>21.00 - 22.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>22.00 - 23.00</strong>
+                            </div>
+                            <div class="g-col-4 time">
+                                <strong>23.00 - 00.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+
+    <div class="your-selected text-center">
+        <h3 class="title-select">Your Selected</h3>
+    </div>
+    <div class="row show-choose">
+        <div class="g-col-12">
+            <div class="selected-item">
+                <strong class="head-Selected">Type Event:</strong> <span id="selectedItemsDisplay"></span>
+            </div>
+
+            <div class="selected-date">
+                <strong class="head-Selected">Date:</strong> <span id="selectedDate"></span>
+            </div>
+            
+            <div class="selected-times">
+                <strong class="head-Selected">Times:</strong> <span id="selectedTimesDisplay"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail">
+        <div class="bor-detail">
+            <p class="confirm-text">Various details from the store will contact you back later. If you confirm, please press Submit.....</p>
+        </div>
+    </div>
+    <div class="but-sub">
+        <button class="sub-service">
+            Submit
+        </button>
+    </div>
+      
+    <!-- SCRIPT -->
+    <script src="calendar.js"></script>
+    <script src="./AddToCart.js"></script>
+</body>
+</html>

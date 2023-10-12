@@ -1,0 +1,229 @@
+
+.row-mem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80px;
+    margin-top: 20px;
+}
+.member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+.grid-card{
+    border: 1px solid lightgrey;
+    height: 360px;
+    width: 280px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0,0.2);
+}
+
+.bi-star-fill {
+    color: gold;
+}
+.container {
+    margin-top: 10px;
+}
+.coupon {
+    padding: 5px 30px 5px 30px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    color: white;
+}
+.coupon:hover {
+    background-color: rgb(211, 56, 0);
+    border: 1px solid rgb(211, 56, 0);
+}
+.coupon2 {
+    padding: 5px 30px 5px 30px;
+    background-color: gray;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 20px;
+}
+.reward {
+    text-decoration: underline;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 94%; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgb(0, 0, 0, 0.2);
+}
+
+td, th {
+    text-align: center;
+    padding: 8px;
+    color: gray;
+}
+th {
+    background-color: #333;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+} 
+tr:nth-child(odd) {
+    background-color: rgb(237, 237, 237);
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    margin-top: 30px;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+.tabie ,
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type-title {
+    display: flex;
+    justify-content: flex-start;
+}
+.col.tabie table th,
+.col.tabie table td {
+    text-align: center; /* จัดวางข้อความในแนวนอนกลาง */
+    vertical-align: middle; /* จัดวางข้อความในแนวตั้งกลาง */
+}
+#no {
+    border-radius: 10px 0 0 0;
+}
+#score {
+    border-radius: 0 10px 0 0;
+}
+#bottom-right {
+    border-radius: 0 0 10px 0;
+}
+#bottom-left {
+    border-radius: 0 0 0 10px;
+}
+.board {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.head-reward {
+    height: 450px;
+    background-image: url('./img4/gift-bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Popular Menu ====================================================================================== */
+.main-reward {
+    max-width: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 20px;
+}
+.pic-product {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 60%;
+    border-top-left-radius: 10px; /* มุมโค้งด้านบนซ้าย */
+    border-top-right-radius: 10px; /* มุมโค้งด้านบนขวา */
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+}
+.body-card {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.grid-card {
+    border-radius: 10px;
+    height: 350px;
+    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.button-view-bestseller {
+    padding: 3px 55px 3px 55px;
+    margin-top: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.button-view-bestseller:hover {
+    background-color: rgb(208, 56, 1);
+    transition: 0.3s ease;
+}
+.pic-rew-01 {
+    background-image: url('./img4/bottle.jpeg');
+}
+.pic-rew-02 {
+    background-image: url('./img4/chocolate-gift.webp');
+}
+.pic-rew-03 {
+    background-image: url('./img4/teddy.jpeg');
+}
+.pic-rew-04 {
+    background-image: url('./img4/ticket.avif');
+}
+.pic-rew-05 {
+    background-image: url('./img4/wine.jpeg');
+}
+.pic-rew-06 {
+    background-image: url('./img4/disneyland-tickets-scaled.jpg');
+}
+.pic-rew-07 {
+    background-image: url('./img4/taylorticket.avif');
+}
+.pic-rew-08 {
+    background-image: url('./img4/iphone-15-pro.jpeg');
+}
+.h5-text {
+    margin-top: 20px;
+}
+
+th#no, th#name, th#acc, th#score {
+    width: 25%;
+}
+.row-grid {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+/* จอมือถือ */
+@media (max-width: 414px) {
+    .colft {
+        height: 10px;
+    }
+    .head-reward {
+        height: 280px;
+    }
+}
+
+.member {
+    padding: 20px;
+}
+
+/* จอมือถือ */
+@media (max-width: 414px) {
+    .colft {
+        height: 10px;
+    }
+    .head-reward {
+        height: 280px;
+    }
+}

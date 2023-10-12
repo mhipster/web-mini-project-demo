@@ -1,0 +1,38 @@
+.container-th{
+    max-width:  100%;
+}
+.col-th{
+    /* border: 1px solid; */
+    padding: 50px 0;
+    height: 60vh;
+}
+.col-th h3, h5, p{
+    margin-bottom: 20px;
+}
+.col-th p{
+    color: rgb(109, 109, 109);
+}
+.btn{
+    background-color: orangered;
+    border: none;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color: rgb(255, 114, 63);
+}
+.btn:focus{
+    background-color: rgb(255, 114, 63);
+}
+
+@media (max-width: 991px) {
+    .containcp,
+    .containerft {
+        display: none;
+    }
+    .btn{
+        background-color: orangered;
+        height: 30px;
+        width: 100px;
+    }
+
+}

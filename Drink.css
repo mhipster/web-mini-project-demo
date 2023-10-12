@@ -1,0 +1,244 @@
+* {
+    font-family: Gabarito, serif;
+}
+.hot,.iced,.frappe{
+    max-width: 97%;
+}
+.tab-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.tab-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.tab-button.active {
+    background-color: orangered;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    padding: 0 20px;
+}
+
+.tab-content h2 {
+    margin-top: 0;
+    max-width: 100%;
+}
+
+.tab-content p {
+    margin-bottom: 0;
+}
+.tab-buttonB {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.tab-buttonC {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Advertisement ================================================================================ */
+.wrapper-drink {
+    background-color: white;
+    max-width: 100%;
+    z-index: -111111;
+}
+.main-drink {
+    max-width: 100%;
+    padding: 0;  
+    margin: 0;
+}
+.add-div {
+    height: 500px;
+    /*background-image: linear-gradient(#333, rgb(255, 255, 255));*/
+    background-color: #1f1f1f;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.side-image {
+    background-image: url('./img4/drink-bg-img.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;;
+}
+.text {
+    color: white;
+    font-weight: bolder;
+}
+/* ปุ่ม Subscribe */
+.sub {
+    width: 140px;
+    height: 40px;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+/* Advertisement (END) ============================================================================ */
+
+@media (max-width: 991px) {
+    .add-div {
+        display: none;
+    }
+    .card {
+        width: 250px; /* Adjust the width as needed */
+        height: 420px; /* Adjust the height as needed */
+    }
+    body,
+    .tab-container,
+    .tab-content {
+        background-color: #1f1f1f;
+    } 
+}
+.border-heart {
+    display: flex;
+    width: 230px;
+    position: absolute;
+    margin-bottom: 365px;
+    justify-content: flex-end;
+}
+.bi-suit-heart-fill {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    color: gray;
+}
+.heart {
+    background-color: white;
+    border: 1px solid white;
+}
+.bi-suit-heart-fill.clicked {
+    fill: rgb(215, 14, 14); /* กำหนดสีแดงเมื่อถูกคลิก */
+}
+
+/* Product ======================================================================== */
+/* Product Border ================================================================================= */
+.cards-drink {
+    border-radius: 10px;
+    height: 370px;
+    border: 0.5px solid lightgray;
+    background-color: whitesmoke;
+}
+.pic-product {
+    height: 50%;
+    border-top-left-radius: 10px; /* มุมโค้งด้านบนซ้าย */
+    border-top-right-radius: 10px; /* มุมโค้งด้านบนขวา */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10px;
+}
+.body-card {
+    margin-bottom: 20px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.button-buy {
+    padding: 3px 50px 3px 50px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.button-buy:hover {
+    background-color: rgb(208, 56, 1);
+    transition: 0.3s ease;
+}
+.but-pie,
+.but-straw-bingsu {
+    background-color: rgb(198, 62, 13);
+    border: rgb(198, 62, 13);
+}
+
+.text-ds {
+    font-size: 3em;
+}
+.grid-dessert {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 40px;
+}
+
+span,.dow {
+    margin-left: 5px;
+}
+.dow {
+    color: gold;
+}
+.dow-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dr-pic1 {
+    background-image: url('./img2/black-coffee.jpg.avif');
+}
+#dr-pic2 {
+    background-image: url('./img2/green-tea-hot.jpeg');
+}
+#dr-pic3 {
+    background-image: url('./img2/Hot-Chocolate-2-of-5.jpg.webp');
+}
+#dr-pic4 {
+    background-image: url('./img2/lata-hot.jpeg');
+}
+#dr-pic5 {
+    background-image: url('./img2/R02665_Hot_Thai_Milk_Tea.jpg');
+}
+#dr-pic6 {
+    background-image: url('./img2/Cappuccino\ with\ spice\ and\ beans.jpg');
+}
+#hot-pic1 {
+    background-image: url('./img3/matcha.jpeg');
+}
+#hot-pic2 {
+    background-image: url('./img3/latte.jpeg');
+}
+#hot-pic3 {
+    background-image: url('./img3/thaitea-cover-content-WEB.png');
+}
+#hot-pic4 {
+    background-image: url('./img3/Cocoa.webp');
+}
+#p1 {
+    background-image: url('./img3/Choco-Frappe.jpg.avif');
+}
+#p2 {
+    background-image: url('./img3/starbucks_green_tea_latte_frappuccino2-scaled.jpg');
+}
+#p3 {
+    background-image: url('./img3/latte-frepp.webp');
+}
+#p4 {
+    background-image: url('./img3/chathai.webp');
+}
+strong {
+    color: rgb(202, 201, 201);
+}
+.border-left {
+    margin-left: 7%;
+}
+.dring {
+    margin-top: 25px;
+}
+.dr1, .dr2 {
+    margin-bottom: 25px;
+}

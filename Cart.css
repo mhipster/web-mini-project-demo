@@ -1,0 +1,345 @@
+body {
+    background-color: white;
+}
+.container-cart{
+    background-color: rgb(245, 247, 137);
+}
+.contain-cart h1{
+    width: 95%;
+    margin-left: 3.4%;
+    /* border: 1px solid;  */
+}
+.containerct{
+    max-width: 100%;
+    height: 580px;
+
+    border-left: none;
+    border-right: none;
+}
+.col-cart{
+    height: 600px;
+    padding: 0;
+    background-color: whitesmoke;
+}
+.order{
+    height: 205px;
+    max-width: 100%;
+    border-width: 90%;
+}
+.order-detail h2{
+    text-align: start;
+    margin: 20px auto;
+    /* border: 1px solid; */
+    width: 90%;
+}
+.space-order{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 480px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+}
+.colod{
+    /* border: 1px solid; */
+    padding: 0;
+}
+.rowod{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.containerod{
+    height: 120px;
+    width: 98%;
+    padding: 0;
+    border-bottom: 1.5px solid lightgray;
+    margin-top: 3.5%;
+}
+.pic-order{
+    border: 1px solid lightgray;
+    height: 100%;
+    width: 90%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.img-order1 {
+    background-color: #1e1e1e;
+    padding: 0;
+    background-image: url('./img3/steak-food.jpeg');
+}
+.img-order2 {
+    background-image: url('./img3/noodle.jpeg');
+}
+.img-order3 {
+    background-image: url('./img3/pad-kaprao.webp');
+}
+.pic-detail{
+    text-align: start;
+}
+.icon-order{
+    float: left;
+    /* border: 1px solid; */
+    margin-top: 3px;
+    margin-right: 7px;
+}
+.icon-order1{
+    margin-right: -50px;
+}
+.type-order, .time-order{
+    float: left;
+}
+.type-order1, .time-order1{
+    float: right;
+}
+.col-detail{
+    margin-top: -5px;
+    padding: 0;
+}
+.text-up-down{
+    width: 40px;
+}
+/* price detail */
+.col-p{
+    max-width: 100%; 
+    padding: 0;
+    height: 28px;
+    margin-top: 39px;
+}
+.price-detail{
+    text-align: end;
+}
+/* ปุ่มกดใจ */
+.bi-suit-heart-fill {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    margin-bottom: 2px;
+    color: rgb(206, 206, 206);
+}
+.icon-order2{
+    text-align: start;
+}
+.heart{
+    padding: 0;
+    border: none;
+    background: none;
+    float: left;
+    margin-left: 50px;
+}
+
+.bi-suit-heart-fill.clicked {
+    fill: rgb(215, 14, 14); /* กำหนดสีแดงเมื่อถูกคลิก */
+}
+@media screen and (max-width: 1180px){
+    .icon-order1{
+        margin-right: -25px;
+    }
+    .type-order1{
+        margin-right: 2px;
+    }
+    .heart{
+        margin-left: 13px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .icon-order1{
+        margin-right: -25px;
+    }
+    .type-order1{
+        margin-right: 2px;
+    }
+    .heart{
+        margin-left: 13px;
+    }
+}
+@media screen and (max-width: 991px){
+    .icon-order1{
+        float: right;
+    }
+    .type-order1{
+        display: none;
+    }
+    .heart{
+        margin-left: -50px;
+    }
+    .time-order1{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .containerod{
+        height: 120px;
+    }
+    .space-order{
+        height: 450px;
+    }
+    .col-cart{
+        height: 650px;
+    }
+    .colft {
+        height: 10px;
+    }
+    .carousel {
+        height: max-content;
+    }
+    
+}
+@media screen and (max-width: 576px){
+    .space-odsum{
+        margin: 0 auto;
+    }
+    .recomment-div {
+        margin-bottom: 100px;
+        height: max-content;
+    }
+    .col-recomment1 {
+        height: max-content;
+        height: 200px;
+    }
+}
+/* order summary */
+.space-odsum{
+    background-color: white;
+    border: 1px solid lightgray;
+    width: 90%;
+    height:540px;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.header{
+    /* border: 1px solid; */
+    border-bottom: 1.5px solid lightgray;
+    width: 80%;
+    padding: 10px 0 10px 0;
+    text-align: start;
+    margin: 0 auto;
+}
+.list-order, .sum-order{
+    padding: 0 0 10px 0;
+    width: 80%;
+    margin-top: 25px;
+    border-bottom: 1.5px solid lightgrey;
+    
+}
+.total-order{
+    padding: 0 0 10px 0;
+    width: 80%;
+    margin-top: 0;
+    border-bottom: 1.5px solid lightgrey;
+}
+.col-order-list, .col-order-price, .col-order-sum, .col-order-price-sum{
+    /* border: 1px solid; */
+    line-height: 10px;
+}
+.col-order-total, .col-order-price-total{
+    margin-top: 15px;
+}
+.col-order-list, .col-order-sum, .col-order-total{
+    text-align: start;
+}
+.col-order-price, .col-order-price-sum, .col-order-price-total{
+    text-align: end;
+}
+.col-order-sum{
+    color: rgb(141, 140, 140);
+}
+.code-input{
+    width: 80%;
+    margin: 25px auto;
+}
+.btn-code-input{
+    background-color: #333;
+    color: white;
+}
+.btn-checkout{
+    background-color: #333;
+    border: none;
+    width: 80%;
+    margin-top: 9px;
+}
+.btn-checkout:hover{
+    background-color: rgb(105, 105, 105);
+}
+
+/* รายการแนะนำ ============================================================================================= */
+span {
+    margin-left: 5px;    
+}
+.our-pop-head,
+.recommend-head {
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0px 10px 0px;
+    margin-left: 3%;
+}
+
+.col-recomment {
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+}
+.col-recomment:hover {
+    box-shadow: 3px 3px 7px 3px rgb(0, 0, 0,0.1);
+    transform: scale(1.01);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.img-recomment {
+    height: 80%;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px; /* มุมโค้งด้านบนซ้าย */
+    border-top-right-radius: 10px; /* มุมโค้งด้านบนขวา */
+}
+.body-recomment {
+    height: 10%;
+}
+.img-recomment {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img1 {
+    background-image: url('./img2/pizza-recomment.jpeg');
+}
+#img2 {
+    background-image: url('./img2/ramen-recoment.webp');
+}
+#img3 {
+    background-image: url('./img2/Sushi-salmon-recomment.jpeg');
+}
+#img4 {
+    background-image: url('./img2/foodrice-recomment.jpeg');
+}
+#img5 {
+    background-image: url('./img2/cookie-recipes.jpg');
+}
+#img6 {
+    background-image: url('./img2/cabonara.jpeg');
+}
+#img7 {
+    background-image: url('./img2/black-coffee-recomment.png');
+}
+#img8 {
+    background-image: url('./img2/pancake-recomment.jpeg');
+}
+
+.container-carousel {
+    max-width: 100%;
+}
+
+#carouselAutoplaying {
+    height: 300px;
+}
+.carousel-item {
+    left: 3%;
+    right: 0;
+    width: 94%; 
+    height: 400px;
+}
+.carousel-control-prev-icon {
+    margin-right: 80%;
+}
+.carousel-control-next-icon {
+    margin-left: 80%;
+}

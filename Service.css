@@ -1,0 +1,282 @@
+* {
+    font-family: Gabarito, serif;
+}
+/* Advertisement ================================================================================ */
+.wrapper {
+    background-color: white;
+    max-width: 100%;
+    z-index: -111111;
+}
+.main {
+    max-width: 100%;
+}
+.add-div {
+    height: 500px;
+}
+.left {
+    background-image: url('./img/event-bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.out-container {
+    max-width: 100%;
+}
+.left2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.item-service:hover {
+    background-color: rgb(209, 209, 209);
+}
+#service2 {
+    margin-top: 20px;
+}
+.service-nav {
+    text-decoration: underline;
+}
+.title-select {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 4%;
+    margin-bottom: 7px;
+}
+.times {
+    background-color: #252561;
+    border-radius: 10px;
+}
+.time {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+}
+.border-times {
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time:hover {
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+
+.active-time {
+    background-color: orangered;
+    color: white;
+}
+
+.head-Selected {
+    font-size: 1.1em;
+    padding: 30px;
+    color: white;
+}
+.carlen ,
+.select-time {
+    padding: 0;
+}
+.select-time {
+    width: 100%;
+}
+.calendar {
+    width: 100%;
+    margin: 0;
+}
+
+/* Popular Menu ====================================================================================== */
+.main-event {
+    max-width: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 10px;
+}
+.pic-product {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 80%;
+    border-top-left-radius: 10px; /* มุมโค้งด้านบนซ้าย */
+    border-top-right-radius: 10px; /* มุมโค้งด้านบนขวา */
+    margin-bottom: 10px;
+}
+.body-card {
+    margin-top: 15px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.grid-card {
+    border-radius: 10px;
+    height: 300px;
+    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 7px;
+}
+span,.dow {
+    margin-left: 5px;
+}
+.dow {
+    color: gold;
+}
+.pic01 {
+    background-image: url('./img4/wedding.jpeg');
+}
+.pic02 {
+    background-image: url('./img4/birthday.webp');
+}
+.pic03 {
+    background-image: url('./img4/Seminar.jpeg');
+}
+.pic04 {
+    background-image: url('./img4/Charitywork.jpeg');
+}
+.pic05 {
+    background-image: url('./img4/FamilyParty.jpeg');
+}
+.pic06 {
+    background-image: url('./img4/celebration.jpeg');
+}
+.pic07 {
+    background-image: url('./img4/honeymoon.webp');
+}
+.pic08 {
+    background-image: url('./img4/OpenProduct.avif');
+}
+
+.grid-time{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.headie2 {
+    background-color: orangered;
+}
+.grid-select-time {
+    padding: 20px 0 20px 0;
+}
+.service {
+    text-decoration: underline;
+}
+.your-select1 ,
+.your-select2 {
+    background-color: orangered;
+}
+.yourselect {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.show-choose {
+    background-color: #333;
+    padding: 30px 0 30px 0;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 10px;
+}
+span {
+    color: white;
+}
+.bor-detail {
+    margin-left: 4%;
+    margin-top: 10px;
+}
+.but-sub {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 10%;
+    margin-left: 4%;
+}
+.sub-service {
+    padding: 10px 20px 10px 20px;
+    background-color: orangered;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+.sub-service:hover {
+    background-color:  rgb(208, 56, 1);
+}
+#sevice-head {
+    color: white;
+    font-size: 6em;
+    font-weight: 900;
+    position: relative;
+    margin-top: 80px;
+}
+
+/* จอมือถือ */
+@media (max-width: 414px) {
+    .add-div {
+        height: 200px;
+    }
+    #sevice-head {
+        color: white;
+        font-size: 3em;
+        font-weight: 700;
+        position: relative;
+        margin-top: 50px;
+    }
+    .grid-card {
+        margin-bottom: 20px;
+    }
+    #service {
+        margin-left: 5px;
+    }
+    .g-col-6 {
+        margin-bottom: 30px;
+    }
+    strong {
+        font-size: small;
+    }
+    .g-col6 {
+        margin-bottom: 10px;
+    }
+    .title-select {
+        margin-left: 30px;
+    }
+    .show-choose {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .confirm-text {
+        font-size: small;
+    }
+    .bor-detail {
+        width: 80%;
+        margin-left: 8%;
+    }
+    .but-sub {
+        width: 83%;
+        margin-left: 8%;
+    }
+    .sub-service {
+        padding: 5px 20px 5px 20px;
+    }
+    .head-Selected {
+        font-size: small;
+    }
+    #selectedItemsDisplay,
+    #selectedDate,
+    #selectedTimesDisplay {
+        font-size: small;
+    }
+}

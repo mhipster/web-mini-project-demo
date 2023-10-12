@@ -1,0 +1,74 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgb(0, 0, 0, 0.2);
+}
+
+td, th {
+    text-align: center;
+    padding: 8px;
+    color: gray;
+}
+th {
+    background-color: #463e9d;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+} 
+tr:nth-child(odd) {
+    background-color: #f1f1fb;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    margin-top: 30px;
+    max-width: 100%;
+}
+.tabie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type-title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pd {
+    border-top-left-radius: 10px;
+}
+.vw {
+    border-top-right-radius: 10px;
+}
+.bs {
+    border-bottom-left-radius: 10px;
+}
+.bt {
+    border-bottom-right-radius: 10px;
+}
+.col.tabie table th,
+.col.tabie table td {
+    text-align: center; /* จัดวางข้อความในแนวนอนกลาง */
+    vertical-align: middle; /* จัดวางข้อความในแนวตั้งกลาง */
+}
+.view {
+    background-color: #cdcae8;
+    color: #463e9d;
+    padding: 2px 20px 2px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.tabie2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  
+}

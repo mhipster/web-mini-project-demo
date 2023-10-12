@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url("./img4/bg-signup.avif") no-repeat; 
+    background-size: cover;  
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 100vh;
+    width: 1100px;  
+    margin: auto; 
+    color: #fff; 
+    padding: 0 30px;
+}
+
+.left {
+    width: 50%; 
+    padding-right: 4rem;  
+}
+
+.left h1 {
+    font-size: 2.8rem;  
+    line-height: 1.2; 
+}
+
+.left p { 
+    font-size: .9rem; 
+    padding-top: 2rem; 
+    opacity: .9;  
+}
+.right {
+    width: 50%;
+}
+
+form {
+    display: flex; 
+    flex-direction: column; 
+    background: #fff; 
+    padding: 28px; 
+    border-radius: 10px;  
+    max-width: 420px;
+}
+
+input, button {
+    padding: 14px;  
+    width: 100%; 
+    border-radius: 10px; 
+}
+
+button {
+    border: 0; 
+    margin: 20px 0; 
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    color: #fff;   
+    word-spacing: 2px; 
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: hsl(20, 62%, 46%);
+    width: 420px;
+} 
+
+span {
+    font-weight: 200;   
+}
+
+.bold {
+    color: #fff; 
+    font-weight: 700; 
+}
+
+input {
+    margin-bottom: 20px; 
+    border: 2px solid lightgray;
+    font-size: .9rem;
+    font-weight: 600;  
+} 
+
+small {
+    color: rgb(176, 176, 176);
+    text-align: center; 
+ }
+
+.right a {
+    text-decoration: underline;
+    color: red; 
+    font-weight: 700; 
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: block; 
+        width: 100%; 
+        height: auto;  
+        margin: 0 auto; 
+        padding: 2rem 0;  
+        text-align: center; 
+    }
+
+    .container section {
+        padding: 0; 
+        margin: 0 auto; 
+        width: 80%;   
+    }
+    .btn-blue{
+        width: 100%;
+    }
+
+    p {
+        text-align: center; 
+        padding: 1rem;       
+    }
+}
+
+.cancel {
+    color: white;
+    background-color: orangered;
+}
+.signup {
+    background-color: #333;
+    margin-bottom: 0;
+}
+.cancel:hover {
+    color: white;
+    background-color: rgb(203, 54, 0);
+}
+.signup:hover {
+    background-color: #252525;
+}
+.mezzdough {
+    font-size: 3em;
+}
+
+@media (max-width: 414px) {
+    .lorem {
+        display: none;
+    }
+    .mezzdough {
+        font-size: 2em;
+    }
+
+}
+.mom-cancel a {
+    color: white;
+    text-decoration: none;
+}

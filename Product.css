@@ -1,0 +1,332 @@
+
+        /* Advertisement ================================================================================ */
+        .wrapper {
+            background-color: white;
+            max-width: 100%;
+            z-index: -111111;
+        }
+        .main {
+            max-width: 100%;
+        }
+        .add-div {
+            background-image: url('....');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+        }
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            position: relative;
+            padding-left: 6%;
+        }
+        .text {
+            color: white;
+            font-weight: bolder;
+        }
+        h1 {
+            color: white;
+            font-size: 5em;
+            font-family: Gabarito,serif;
+            font-weight: 900;
+        }
+        /* Advertisement (END) ============================================================================ */
+       
+
+        /* รายการแนะนำ ============================================================================================= */
+        span {
+            margin-left: 5px;    
+        }
+        .our-pop-head,
+        .recommend-head {
+            display: flex;
+            justify-content: flex-start;
+            padding: 30px 0px 10px 0px;
+        }
+
+        .col-recomment {
+            height: 300px;
+            border-radius: 10px;
+            border: 1px solid lightgrey;
+        }
+        .col-recomment:hover {
+            box-shadow: 3px 3px 7px 3px rgb(0, 0, 0,0.1);
+            transform: scale(1.01);
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+        .img-recomment {
+            height: 60%;
+            margin-bottom: 10px;
+            border-top-left-radius: 10px; /* มุมโค้งด้านบนซ้าย */
+            border-top-right-radius: 10px; /* มุมโค้งด้านบนขวา */
+        }
+        .body-recomment {
+            height: 10%;
+        }
+        .img-recomment,
+        .ad {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container-carousel {
+            max-width: 100%;
+        }
+ 
+        #carouselAutoplaying {
+            height: max-content;
+            width: 100%;
+            padding: 0%;
+        }
+        .carousel-item {
+            left: 3%;
+            right: 0;
+            width: 94%; 
+            height: max-content;
+        }
+        .carousel-control-prev-icon {
+            margin-right: 80%;
+        }
+        .carousel-control-next-icon {
+            margin-left: 80%;
+        }
+
+        .ad {
+            margin-bottom: 20px;
+            border: 1px solid black;
+            width: 100%;
+            height: 200px;
+        }
+        .ad1 {
+            background-image: url('./img4/Shopee_10.10.jpeg');
+        }
+        .ad2 {
+            background-image: url('./img4/lazada1111.png');
+        }
+        .ad3 {
+            background-image: url('./img4/grab.png');
+        }
+        .ad4 {
+            background-image: url('./img4/foodpanda.jpeg');
+        }
+        .container {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        /* Product Border ================================================================================= */
+        .cards {
+            border-radius: 10px;
+            height: 370px;
+            border: 0.5px solid lightgray;
+            background-color: whitesmoke;
+        }
+        .main-thai-food{
+            max-width: 100%;
+        }
+        .pic-product {
+            height: 50%;
+            border-top-left-radius: 10px; /* มุมโค้งด้านบนซ้าย */
+            border-top-right-radius: 10px; /* มุมโค้งด้านบนขวา */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .body-card {
+            margin-bottom: 20px;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        .button-buy {
+            padding: 3px 50px 3px 50px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .button-buy:hover {
+            background-color: rgb(208, 56, 1);
+            transition: 0.3s ease;
+        }
+        .but-pie,
+        .but-straw-bingsu {
+            background-color: rgb(198, 62, 13);
+            border: rgb(198, 62, 13);
+        }
+
+        .text-ds {
+            font-size: 3em;
+        }
+        .grid-thai-food {
+            margin-left: 3%;
+            margin-right: 3%;
+            margin-top: 40px;
+        }
+        strong {
+            color: rgb(201, 201, 201);
+        }
+        span,.dow {
+            margin-left: 5px;
+        }
+        .dow {
+            color: gold;
+        }
+        .dow-star {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #tf-pic1 {
+            background-image: url('./img3/tomyumkung.jpeg');
+        }
+        #tf-pic2 {
+            background-image: url('./img3/foodrice.jpeg');
+        }
+        #tf-pic3 {
+            background-image: url('./img3/pad-kaprao.webp');
+        }
+        #tf-pic4 {
+            background-image: url('./img3/green-curry.avif');
+        }
+        #tf-pic5 {
+            background-image: url('./img3/pad-thai.webp');
+        }
+        #tf-pic6 {
+            background-image: url('./img3/somtam.webp');
+        }
+        #tf-pic7 {
+            background-image: url('./img3/tomkhakai.png');
+        }
+        #tf-pic8 {
+            background-image: url('./img3/Grilled-Fish.jpeg');
+        }
+        #tf-pic9 {
+            background-image: url('./img3/pic-spicy.png');
+        }
+        #tf-pic10 {
+            background-image: url('./img3/Grilled-Chicken.jpeg');
+        }
+        #tf-pic11 {
+            background-image: url('./img3/kaomunkai.webp');
+        }
+        #tf-pic12 {
+            background-image: url('./img3/noodle.jpeg');
+        }
+        #sec-sroll {
+            margin-bottom: 30px;
+        }
+
+        #jf-pic1 {
+            background-image: url('./img3/ramen.jpeg');
+        }
+        #jf-pic2 {
+            background-image: url('./img3/gyudon.jpg');
+        }
+        #jf-pic3 {
+            background-image: url('./img3/salmon-rice.jpeg');
+        }
+        #jf-pic4 {
+            background-image: url('./img3/sushi.jpeg');
+        }
+        #jf-pic5 {
+            background-image: url('./img3/Unadon.jpeg');
+        }
+        #jf-pic6 {
+            background-image: url('./img3/Egg-sweet.jpeg');
+        }
+        #jf-pic7 {
+            background-image: url('./img3/miso.png');
+        }
+        #jf-pic8 {
+            background-image: url('./img3/sweat.jpeg');
+        }
+        
+
+        #if-pic1 {
+            background-image: url('./img4/pasta.jpeg');
+        }
+        #if-pic2 {
+            background-image: url('./img4/cabonara.jpeg');
+        }
+        #if-pic3 {
+            background-image: url('./img4/pizza-italy.jpeg');
+        }
+        #if-pic4 {
+            background-image: url('./img4/bruschetta-with-mozzarella-appetizer-1200.jpeg');
+        }
+        #if-pic5 {
+            background-image: url('./img4/PanzanellaSalad.jpeg');
+        }
+        #if-pic6 {
+            background-image: url('./img4/Lasagna.jpeg');
+        }
+        #if-pic7 {
+            background-image: url('./img4/Ossobuco.webp');
+        }
+        #if-pic8 {
+            background-image: url('./img4/Risotto.webp');
+        }
+        /* Product Border (END) ============================================================================ */
+        .thai-food-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .col-thai {
+            margin-bottom: 25px;
+        }
+        /* รายการแนะนำ (End)========================================================================================== */
+
+        #ds-pic1 {
+            background-image: url('./img2/pancake-dessert.jpg');
+        }
+        #ds-pic2 {
+            background-image: url('./img2/eggtart-dessert.jpeg');
+        }
+        #ds-pic3 {
+            background-image: url('./img2/donut-dessert.jpeg');
+        }
+        #ds-pic4 {
+            background-image: url('./img2/Banana-Crape.jpeg');
+        }
+        /* Product Border (END) ============================================================================ */
+        #ds-pic5 {
+            background-image: url('./img2/waffle.webp');
+        }
+        #ds-pic6 {
+            background-image: url('./img2/chocolate-cheese-cake.jpeg');
+        }
+        #ds-pic7 {
+            background-image: url('./img2/cookie-dessert.jpg');
+        }
+        #ds-pic8 {
+            background-image: url('./img2/pudding-caramel.jpeg');
+        }
+        #ds-pic9 {
+            background-image: url('./img2/bread-butter-toast.jpeg');
+        }
+        #ds-pic10 {
+            background-image: url('./img2/fabulous-orange-desserts.jpg.webp');
+        }
+        #ds-pic11 {
+            background-image: url('./img2/pain-au-chocolat-FT-RECIPE0920-2a11bb8aa5fe42fb8924e0df724f0072.jpg');
+        }

@@ -1,0 +1,84 @@
+        /* Footer ========================================================================================== */
+        *{
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid;   */
+        }
+        footer {
+            /* ตั้งค่า margin และ padding เป็น 0 เพื่อให้ไม่มีช่องว่างโดยอัตโนมัติ */
+            margin: 0;
+            padding: 0;
+            width: 100%; /* ตั้งค่าความกว้างเป็น 100% เพื่อให้เต็มความกว้างของ containerft */
+        }
+        .containerft{
+            /* border: 1px solid; */
+            max-width: 100%;
+            background-color: #333;
+        }
+        .colft{
+            /* border: 1px solid; */
+            height: 300px;
+        }
+        .colft2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .containerft .bi {
+            margin: 25px;
+            transform: scale(2);
+            color: white;  
+        }
+        .containerft p {
+            color: white;
+            margin: 0 0 10px 0;
+        }
+        .containerft h1{
+            color: white;
+            margin: 20px 0 0 0;
+        }
+        .containerft a{
+            margin: 0 0 10px 0;
+            text-decoration: none;
+            color: gold;
+        }
+        .rowa {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .containcp {
+            padding: 7px;
+            border-top: 1px solid gray;
+            background-color: #333;
+            text-align: center;
+            color: white;
+            font-size: small;
+            height: 35px;
+        }
+
+        .ppp {
+            color: white;
+        }
+
+        /* จอมือถือ */
+        @media (max-width: 414px) {
+            .colft {
+                height: 10px;
+            }
+            .col-nav {
+                font-size: 0.6em;
+            }
+            .bi-facebook,
+            .bi-instagram,
+            .bi-twitter,
+            .bi-line,
+            .bi-youtube {
+                height: 10px;
+                width: 10px;
+            }
+
+     
+        }
+
+        /* Footer (END) ===================================================================================== */

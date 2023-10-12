@@ -1,0 +1,107 @@
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.body-main { 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar {
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #f1f1fb;
+  margin-top: 20px;
+}
+.calendar .headie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+.calendar .headie .month {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color:  #1d1d1d;
+}
+.calendar .headie .btns {
+  display: flex;
+  gap: 10px;
+}
+.calendar .headie .btns .btn {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: orangered;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.calendar .headie .btns .btn:hover {
+  background-color: rgb(213, 57, 0);
+  transform: scale(1.05);
+}
+.weekdays {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.weekdays .day {
+  width: calc(100% / 7 - 10px);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.days .day {
+  width: calc(100% / 7 - 10px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1d1d1d;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.days .day:not(.next):not(.prev):hover {
+  color: #fff;
+  background-color: orangered;
+  transform: scale(1.05);
+}
+.days .day.today {
+  color: #fff;
+  background-color: orangered;
+}
+.days .day.next,
+.days .day.prev {
+  color: #ccc;
+}
+
+/* CSS for hover state */
+.day:hover {
+  background-color: #ccc; /* เปลี่ยนสีพื้นหลังเมื่อ hover ที่วัน */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็น pointer เมื่อ hover ที่วัน */
+}
+
+/* CSS for active state */
+.day.active {
+  background-color: orangered; /* เปลี่ยนสีพื้นหลังเมื่อคลิกที่วัน */
+  color: #fff; /* เปลี่ยนสีข้อความเมื่อคลิกที่วัน */
+} 

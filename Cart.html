@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart | Mezzdough Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Gabarito">
+    <link rel="stylesheet" href="./Cart.css">
+</head>
+<body>
+        <!-- =========================================== Navbar ============================================ -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+        
+                <!-- ========= Logo ========= -->
+                  <a class="logo" href="./index.html">MEZZDOUGH</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+                    <!-- ========= Nav Home ========= -->
+                    <li class="nav-item item-home">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+        
+                    <!-- ======== Nav Product Dropdown ======== -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-Product" href="./Product" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Products &#9207;
+                        </a>
+                        <!-- ======= Dropdown Level1 ======= -->
+                        <ul class="dropdown-menu">
+                          <li class="type-food"><a class="dropdown-item" href="./Dessert.html">Dessert</a></li>
+                          <li class="type-food"><a class="dropdown-item" href="./Drink.html">Drink</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li class="type-food"><a class="dropdown-item food-focus" href="#">Food &#9205;</a>
+        
+                            <!-- ======= Dropdown Level2 ======= -->
+                            <ul class="foods">
+                                <a class="f-country" href="./ThaiFood.html">
+                                    <li class="food">Thai</li>
+                                </a>
+                                <a class="f-country" href="./JapanFood.html">
+                                    <li class="food">Japan</li>
+                                </a>
+                                <a class="f-country" href="./FranceFood.html">
+                                    <li class="food">France</li>
+                                </a>
+                                <a class="f-country" href="./ItalyFood.html">
+                                    <li class="food">Italy</li>
+                                </a>
+                            </ul>
+                            </li>
+        
+                        </ul>
+                    </li>
+        
+                    <!-- ======== Nav Contact ========= -->
+                    <li class="nav-item">
+                        <a class="nav-link contact" href="./Contact.html">Contact</a>
+                    </li>
+        
+                    <!-- ========= Nav Service ======== -->
+                    <li class="nav-item">
+                        <a class="nav-link service" href="./Service">Service</a>
+                    </li>
+        
+                    <!-- ========= Nav Reward ======== -->
+                    <li class="nav-item">
+                        <a class="nav-link reward" href="./Reward.html">Reward</a>
+                    </li>
+        
+                    </ul>
+        
+                    <div class="icon-right">
+                    <!-- ======= Icon รถเข็น ======= -->
+                    <div class="cart">
+                        <a href="./Cart.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                            </svg>
+                        </a>
+                        <div class="count"><span> 0 </span></div>
+                    </div>
+        
+                    <!-- ======== กล่อง search ========= -->
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2 search2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+        
+                    <!-- ======= Icon User ======= -->
+                    <a href="./Profile.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                        </svg>
+                    </a>
+                    </div>
+        
+                  </div>
+                </div>
+            </nav>
+        </header>
+    <!-- header Order Now -->
+    <div class="container-cart">
+        <div class="contain-cart">
+        </div>
+
+        <!-- order detail -->
+        <div class="contain-cart">
+            <!-- แบ่งคอลัมน์พื้นที่ cart กับ ใบเสร็จ -->
+            <div class="container text-center containerct">
+                <div class="row-cart row">
+                  <div class="col-cart col-sm-8">
+                    <!-- ข้างใน cart คือ order  -->
+                        <div class="order">
+                            <div class="order-detail">
+                                <h2>Order Detail</h2>
+                            </div>
+                            <div class="space-order">
+                                    <!-- contain order1 detail -->
+                                    <div class="container text-center containerod">
+                                        <div class="rowod row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                                            <!-- รูปอาหาร -->
+                                          <div class="col colod col-lg-3">
+                                            <div class="pic-order img-order1">
+                           
+                                            </div>
+                                          </div>
+                                          <!-- รายละเอียดอาหาร -->
+                                          <div class="col colod col-md-4">
+                                            <!-- ชื่ออาหาร -->
+                                            <div class="pic-detail">
+                                                <h4>Steak</h4>
+                                                <!-- แบ่งฝั่ง detailอาหาร -->
+                                                <div class="container text-center detail">
+                                                    <div class="row-detail row">
+                                                      <div class="col-detail col-5">
+                                                        <!-- icon ส้อม -->
+                                                        <img class="icon-order" src="./img4/fork.png" width="20px" alt="icon-fork">
+                                                        <!-- ประเภทอาหาร -->
+                                                        <p class="type-order">Rice</p>
+                                                      </div>
+                                                      <div class="col-detail col-7">
+                                                        <!-- ไอคอนเวลา -->
+                                                        <img class="icon-order" src="./img4/clock.png" width="20px" alt="icon-time">
+                                                        <!-- เวลา -->
+                                                        <p class="time-order">15 min</p>
+                                                      </div>
+                                                    </div>
+                                                  </div> 
+                                                  <div class="add-delete">
+                                                    <input type="button" value="-" class="down">
+                                                    <input type="text" value="1" class="text-up-down text-center">
+                                                    <input type="button" value="+" class="up">
+                                                </div>        
+                                            </div>
+                                          </div>
+                                          <div class="colod col col-lg-5">
+                                            <div class="price-detail">
+                                                <h4>฿149.00</h4>
+                                                <div class="container text-center p-detail">
+                                                    <div class="row-p row">
+                                                      <div class="col-p col">
+                                                        <!-- icon bin -->
+                                                        <img class="icon-order1" src="./img4/recycle-bin.png" width="20px" alt="icon-bin">
+                                                        <p class="type-order1">Remove</p>
+                                                      </div>
+                                                      <div class="col-p col">
+                                                        <div class="icon-order1">
+                                                            <button class="heart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                                                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                                                            </svg></button>
+                                                        </div>
+                                                        <p class="time-order1">Save Later</p>
+                                                      </div>
+                                                    </div>
+                                                  </div> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <!-- contain order2 detail -->
+                                    <div class="container text-center containerod">
+                                        <div class="rowod row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                                            <!-- รูปอาหาร -->
+                                          <div class="colod col col-lg-3">
+                                            <div class="pic-order img-order2">
+                                               
+                                            </div>
+                                          </div>
+                                          <!-- รายละเอียดอาหาร -->
+                                          <div class="colod col col-md-4">
+                                            <!-- ชื่ออาหาร -->
+                                            <div class="pic-detail">
+                                                <h4>Noodle</h4>
+                                                <!-- แบ่งฝั่ง detailอาหาร -->
+                                                <div class="container text-center detail">
+                                                    <div class="row-detail row">
+                                                      <div class="col-detail col-5">
+                                                        <!-- icon ส้อม -->
+                                                        <img class="icon-order" src="./img4/fork.png" width="20px" alt="icon-fork">
+                                                        <!-- ประเภทอาหาร -->
+                                                        <p class="type-order">Rice</p>
+                                                      </div>
+                                                      <div class="col-detail col-7">
+                                                        <!-- ไอคอนเวลา -->
+                                                        <img class="icon-order" src="./img4/clock.png" width="20px" alt="icon-time">
+                                                        <!-- เวลา -->
+                                                        <p class="time-order">10 min</p>
+                                                      </div>
+                                                    </div>
+                                                  </div> 
+                                                  <div class="add-delete">
+                                                    <input type="button" value="-" class="down">
+                                                    <input type="text" value="1" class="text-up-down text-center">
+                                                    <input type="button" value="+" class="up">
+                                                </div>        
+                                            </div>
+                                          </div>
+                                          <div class="colod col col-lg-5">
+                                            <div class="price-detail">
+                                                <h4>฿59.00</h4>
+                                                <div class="container text-center p-detail">
+                                                    <div class="row-p row">
+                                                      <div class="col-p col">
+                                                        <!-- icon bin -->
+                                                        <img class="icon-order1" src="./img4/recycle-bin.png" width="20px" alt="icon-bin">
+                                                        <p class="type-order1">Remove</p>
+                                                      </div>
+                                                      <div class="col-p col">
+                                                        <div class="icon-order1">
+                                                            <button class="heart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                                                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                                                            </svg></button>
+                                                        </div>
+                                                        <p class="time-order1">Save Later</p>
+                                                      </div>
+                                                    </div>
+                                                  </div> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                            <!-- contain order3 detail -->
+                                    <div class="container text-center containerod">
+                                        <div class="rowod row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                                            <!-- รูปอาหาร -->
+                                          <div class="colod col col-lg-3">
+                                            <div class="pic-order img-order3">
+                                                
+                                            </div>
+                                          </div>
+                                          <!-- รายละเอียดอาหาร -->
+                                          <div class="colod col col-md-4">
+                                            <!-- ชื่ออาหาร -->
+                                            <div class="pic-detail">
+                                                <h4>Pad Kaprao</h4>
+                                                <!-- แบ่งฝั่ง detailอาหาร -->
+                                                <div class="container text-center detail">
+                                                    <div class="row-detail row">
+                                                      <div class="col-detail col-5">
+                                                        <!-- icon ส้อม -->
+                                                        <img class="icon-order" src="./img4/fork.png" width="20px" alt="icon-fork">
+                                                        <!-- ประเภทอาหาร -->
+                                                        <p class="type-order">Rice</p>
+                                                      </div>
+                                                      <div class="col-detail col-7">
+                                                        <!-- ไอคอนเวลา -->
+                                                        <img class="icon-order" src="./img4/clock.png" width="20px" alt="icon-time">
+                                                        <!-- เวลา -->
+                                                        <p class="time-order">15 min</p>
+                                                      </div>
+                                                    </div>
+                                                  </div> 
+                                                  <div class="add-delete">
+                                                    <input type="button" value="-" class="down">
+                                                    <input type="text" value="1" class="text-up-down text-center">
+                                                    <input type="button" value="+" class="up">
+                                                </div>        
+                                            </div>
+                                          </div>
+                                          <div class="colod col col-lg-5">
+                                            <div class="price-detail">
+                                                <h4>฿49.00</h4>
+                                                <div class="container text-center p-detail">
+                                                    <div class="row-p row">
+                                                      <div class="col-p col">
+                                                        <!-- icon bin -->
+                                                        <img class="icon-order1" src="./img4/recycle-bin.png" width="20px" alt="icon-bin">
+                                                        <p class="type-order1">Remove</p>
+                                                      </div>
+                                                      <div class="col-p col">
+                                                        <div class="icon-order1">
+                                                            <button class="heart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                                                                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                                                            </svg></button>
+                                                        </div>
+                                                        <p class="time-order1">Save Later</p>
+                                                      </div>
+                                                    </div>
+                                                  </div> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                        
+                            </div>
+                        </div>
+                  </div>
+                  <!-- order summary -->
+                  <div class="col-cart col-sm-4 ">
+                        <!-- พื้นที่ order summary -->
+                        <div class="space-odsum">
+                            <!-- หัวข้อ -->
+                            <div class="header">
+                                <h2>Order Summary</h2>
+                            </div>
+                            <!-- รายการอาหารที่สั่ง-->
+                            <div class="container text-center list-order">
+                                <div class="row row-order-list">
+                                  <div class="col-7 col-order-list">
+                                    <p>Steak x 1</p></div>
+                                  <div class="col-5 col-order-price">
+                                    <p>฿ 149.00</p>
+                                  </div>
+                                  <div class="col-7 col-order-list">
+                                    <p>Noodle x 1</p></div>
+                                  <div class="col-5 col-order-price">
+                                    <p>฿ 59.00</p>
+                                </div>
+                                <div class="col-7 col-order-list">
+                                    <p>Pad Kaproa x 1</p> </div>
+                                  <div class="col-5 col-order-price">
+                                    <p>฿ 49.00</p>
+                                </div>
+                              </div>          
+                       </div>
+                       <!-- Subtotal -->
+                       <div class="container text-center sum-order">
+                        <div class="row row-order-sum">
+                          <div class="col-7 col-order-sum">
+                            <p>Subtotle</p></div>
+                          <div class="col-5 col-order-price-sum">
+                            <p>฿ 257.00</p>
+                          </div>
+                          <div class="col-7 col-order-sum">
+                            <p>Delivery</p></div>
+                          <div class="col-5 col-order-price-sum">
+                            <p>฿ 5.00</p>
+                        </div>
+                        <div class="col-7 col-order-sum">
+                            <p>VAT</p> </div>
+                          <div class="col-5 col-order-price-sum">
+                            <p>฿ 2.00</p>
+                        </div>
+                   </div>
+                  </div>
+                   <!-- Total -->
+                   <div class="container text-center total-order">
+                    <div class="row row-order-total">
+                      <div class="col-7 col-order-total">
+                        <h3>TOTAL</h3></div>
+                      <div class="col-5 col-order-price-total">
+                        <h3>฿ 264</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- โค้ดส่วนลด -->
+                <div class="input-group mb-3 code-input">
+                    <input type="text" class="form-control enter-code" placeholder="Enter discount code" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary btn-code-input" type="button" id="button-addon2">Apply</button>
+                  </div> 
+                  <!-- ปุ่ม checkout -->
+                  <a href="./Checkout.html">
+                    <button type="button" class="btn btn-primary btn-checkout">Checkout</button> 
+                  </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================= รายการแนะนำ =========================================== -->
+    <div class="recomment-div">
+        <div class="grid text-center">
+            <div class="g-col-12 recommend-head"><h2 class="recommend-head2" id="recom2">Recommended</h2></div>
+        </div>
+        <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item text-center active">
+
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
+                        <div class="col">
+                            <div class="col-recomment col-recomment1">
+                                <div class="img-recomment" id="img1">
+                                </div>
+                                <div class="body-recomment">
+                                    <h4 class="title-best-seller">Pizza</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="col col-recomment col-recomment2">
+                                <div class="img-recomment" id="img2"></div>
+                                <div class="body-recomment">
+                                    <h4 class="title-best-seller">Ramen</h4>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="col">
+                            <div class="col col-recomment col-recomment3">
+                                <div class="img-recomment" id="img3"></div>
+                                <div class="body-recomment">
+                                    <h4 class="title-best-seller">Sushi Salmon</h4></div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="col col-recomment">
+                                <div class="img-recomment" id="img4"></div>
+                                <div class="body-recomment">
+                                    <h4 class="title-best-seller">Food Rice</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="carousel-item">
+                    <div class="container text-center container-carousel">
+
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
+                        
+                            <div class="col">
+                                <div class="col col-recomment">
+                                    <div class="img-recomment" id="img5"></div>
+                                    <div class="body-recomment">
+                                        <h4 class="title-best-seller">Cookie</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="col col-recomment">
+                                    <div class="img-recomment" id="img6"></div>
+                                    <div class="body-recomment">
+                                        <h4 class="title-best-seller">Spaghetti Cabonara</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="col col-recomment">
+                                    <div class="img-recomment" id="img7"></div>
+                                    <div class="body-recomment">
+                                        <h4 class="title-best-seller">Black Coffee</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="col col-recomment">
+                                    <div class="img-recomment" id="img8"></div>
+                                    <div class="body-recomment">
+                                        <h4 class="title-best-seller">Pancake</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // Get references to the elements
+        var decrementButton = document.querySelector(".down");
+        var incrementButton = document.querySelector(".up");
+        var textField = document.querySelector(".text-up-down");
+
+        // Add click event listeners for the decrement and increment buttons
+        decrementButton.addEventListener("click", function() {
+            var currentValue = parseInt(textField.value);
+            if (currentValue > 1) {
+                textField.value = currentValue - 1;
+            }
+        });
+
+        incrementButton.addEventListener("click", function() {
+            var currentValue = parseInt(textField.value);
+            textField.value = currentValue + 1;
+        });
+    });
+    </script>
+    
+    <script>
+        // หาองค์ประกอบ SVG ที่เราต้องการจะเปลี่ยนสี
+        const heartIcons = document.querySelectorAll(".bi-suit-heart-fill");
+
+        // เพิ่มการจัดการเหตุการณ์คลิกให้กับทุกไอคอนหัวใจ
+        heartIcons.forEach(function (icon) {
+            icon.addEventListener("click", function () {
+                // เปลี่ยนสีของไอคอนหัวใจเป็นแดง
+                icon.classList.toggle("clicked");
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

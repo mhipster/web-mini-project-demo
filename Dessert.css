@@ -1,0 +1,198 @@
+* {
+    font-family: Gabarito, serif;
+}
+/* Advertisement ================================================================================ */
+.wrapper {
+    background-color: white;
+    max-width: 100%;
+    z-index: -111111;
+}
+.main {
+    max-width: 100%;
+}
+.add-div {
+    height: 500px;
+    /*background-image: linear-gradient(#333, rgb(255, 255, 255));*/
+    background-color:  #1c1c1c;
+}
+.side-image {
+    background-image: url('./img2/ds-new-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+.border-left {
+    margin-left: 8%;
+}
+.text {
+    color: white;
+    font-weight: bolder;
+}
+/* ปุ่ม Subscribe */
+.sub {
+    width: 140px;
+    height: 40px;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+/* Advertisement (END) ============================================================================ */
+
+/* Product Border ================================================================================= */
+.cards {
+    border-radius: 10px;
+    height: 370px;
+    border: 0.5px solid lightgray;
+    background-color: whitesmoke;
+}
+.pic-product {
+    height: 50%;
+    border-top-left-radius: 10px; /* มุมโค้งด้านบนซ้าย */
+    border-top-right-radius: 10px; /* มุมโค้งด้านบนขวา */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10px;
+}
+.body-card {
+    margin-bottom: 20px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.button-buy {
+    padding: 3px 50px 3px 50px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.button-buy:hover {
+    background-color: rgb(208, 56, 1);
+    transition: 0.3s ease;
+}
+.but-pie,
+.but-straw-bingsu {
+    background-color: rgb(198, 62, 13);
+    border: rgb(198, 62, 13);
+}
+
+.text-ds {
+    font-size: 3em;
+}
+.grid-dessert {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 40px;
+}
+
+span,.dow {
+    margin-left: 5px;
+}
+.dow {
+    color: gold;
+}
+.dow-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-dessert {
+    margin-bottom: 30px;
+}
+
+#ds-pic1 {
+    background-image: url('./img2/pancake-dessert.jpg');
+}
+#ds-pic2 {
+    background-image: url('./img2/eggtart-dessert.jpeg');
+}
+#ds-pic3 {
+    background-image: url('./img2/donut-dessert.jpeg');
+}
+#ds-pic4 {
+    background-image: url('./img2/Banana-Crape.jpeg');
+}
+/* Product Border (END) ============================================================================ */
+#ds-pic5 {
+    background-image: url('./img2/waffle.webp');
+}
+#ds-pic6 {
+    background-image: url('./img2/chocolate-cheese-cake.jpeg');
+}
+#ds-pic7 {
+    background-image: url('./img2/cookie-dessert.jpg');
+}
+#ds-pic8 {
+    background-image: url('./img2/pudding-caramel.jpeg');
+}
+#ds-pic9 {
+    background-image: url('./img2/bread-butter-toast.jpeg');
+}
+#ds-pic10 {
+    background-image: url('./img2/fabulous-orange-desserts.jpg.webp');
+}
+#ds-pic11 {
+    background-image: url('./img2/pain-au-chocolat-FT-RECIPE0920-2a11bb8aa5fe42fb8924e0df724f0072.jpg');
+}
+strong {
+    color: rgb(202, 201, 201);
+}
+.des {
+    margin-bottom: 25px;
+}
+@media (max-width: 414px) {
+    .side-image {
+        display: none;
+    }
+    .add-div {
+        height: 230px;
+    }
+    .des1 ,
+    .des2 {
+        margin-top: 20px;
+    }
+    .button-buy {
+        padding: 1px 15px 1px 15px;
+    }
+    .cards {
+        height: 300px;
+    }
+    .pic-product {
+        height: 50%;
+    }
+    .body-card {
+        height: 20%;
+    }
+    .title {
+        font-size: large;
+    }
+    .button-buy,
+    span {
+        font-size: small;
+    }
+    .price {
+        font-size: medium;
+    }
+    /* ปุ่ม Subscribe */
+    .sub {
+    width: 100px;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    }
+    .colft {
+        height: 10px;
+    }
+}
